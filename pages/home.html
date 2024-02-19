@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Home | server.hrszpuk.com</title>
+    <link rel="stylesheet" href="/public/styles/style.css">
 </head>
 <body>
+<template id="expandable-list-template">
+    <style>
+        .list-item {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        .list-item:not(:last-child) {
+            border-bottom: 1px solid #ddd;
+        }
+        .list-item-details {
+            display: none;
+            padding: 10px;
+            background-color: #e0e0e0;
+        }
+    </style>
+    <ul>
+        <li class="list-item">Default Item 1</li>
+        <li class="list-item">Default Item 2</li>
+        <!-- Actual items will be populated here -->
+    </ul>
+</template>
 
+<h1>server.hrszpuk.com</h1>
+
+<ExpandableList endpoint="./api/v1/containers/list"></ExpandableList>
+<ExpandableList endpoint="./api/v1/scripts/list"></ExpandableList>
+
+<script src="public/scripts/ExpandableList.js"></script>
 </body>
 </html>
