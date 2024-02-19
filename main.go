@@ -14,6 +14,7 @@ func main() {
 	DirectoryStatusCheck(api.ScriptsDir)
 
 	app := fiber.New()
+	app.Static("/public", "public")
 
 	log.Printf("Setting up routes")
 
