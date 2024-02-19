@@ -1,0 +1,20 @@
+UI Requirements
+---------------
+Home page:
+- title: server.hrszpuk.com
+- Status:
+    - Master server status (machine)
+    - API status (tooltip: ping)
+    - Services status (count online/offline)
+    - Server status (count online/offline)
+    - Scripts Runner status
+    - Scripts count
+- Servers list
+    - Entry: [server icon] [server name] [server status]
+    - Click entry to drop down more information
+- Services list
+    - Entry: [service icon] [service name] [status]
+    - Click entry to drop down more information
+- Scripts list
+    - Entry: [bash/python icon] [script name]
+    - Click entry to drop down more information
