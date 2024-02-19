@@ -1,0 +1,37 @@
+api.hrszpuk.com v1 documentation
+
+Containers are docker containers running server services.
+
+Scripts are Bash/Python scripts ran on the server to, run processes on the server or, get information from the server.
+
+GET api.hrszpuk.com/v1/docs
+Get this page.
+Response: docs.txt.
+
+GET api.hrszpuk.com/v1/ping
+Get api ping.
+Response: ping in ms.
+
+GET api.hrszpuk.com/v1/uptime
+Get server uptime.
+Response: get server uptime.
+
+GET api.hrszpuk.com/v1/system
+Get system information.
+Response: name, os, etc.
+
+GET api.hrszpuk.com/v1/containers/list
+Get a list of the system containers.
+Response: name, id, description.
+
+GET api.hrszpuk.com/v1/containers/get/:id
+Get information about a system container.
+Response: name, id, description, status, uptime, etc.
+
+GET api.hrszpuk.com/v1/scripts/list
+Get a list of the available scripts.
+Response: name, id, and description.
+
+GET api.hrszpuk.com/v1/scripts/run/:id
+Run a script.
+Response: stdout, stderr, and exit code.
