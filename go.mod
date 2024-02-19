@@ -1,4 +1,4 @@
-module api.hrszpuk.com
+module server.hrszpuk.com
 
 go 1.22.0
 
